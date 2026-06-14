@@ -1,0 +1,1 @@
+ModLuaFileAppend("data/scripts/gun/gun_actions.lua","mods/RAT_GUN/files/ratgun_actions.lua")
