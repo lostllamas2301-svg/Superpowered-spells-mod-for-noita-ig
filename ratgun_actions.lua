@@ -6,7 +6,7 @@ table.insert( actions,
 	sprite 		= "mods/RAT_GUN/files/actions/rat.png",
 	type 		= ACTION_TYPE_PROJECTILE,
 	spawn_level                       = "2,3,4,5,6", 
-	spawn_probability                 = "1,1,1,1",
+	spawn_probability                 = "1,1,1,1,1",
 	price = 200,
 	mana = 75,
 	action 		= function()
@@ -22,7 +22,7 @@ table.insert( actions,
 	sprite 		= "mods/RAT_GUN/files/actions/rat.png",
 	type 		= ACTION_TYPE_PROJECTILE,
 	spawn_level                       = "2,3,4,5,6", 
-	spawn_probability                 = "1,1,1,1",
+	spawn_probability                 = "1,1,1,1,1",
 	price = 100,
 	mana = 50,
 	action 		= function()
@@ -38,7 +38,7 @@ table.insert( actions,
 	sprite 		= "mods/RAT_GUN/files/actions/rat.png",
 	type 		= ACTION_TYPE_PROJECTILE,
 	spawn_level                       = "2,3,4,5,6", 
-	spawn_probability                 = "1,1,1,1",
+	spawn_probability                 = "1,1,1,1,1",
 	price = 100,
 	mana = 50,
 	action 		= function()
@@ -48,17 +48,17 @@ table.insert( actions,
 } )
 table.insert( actions,
 {
-	id          = "DREADGOD",
+	id          = "DREADGOD1",
 	name 		= "The Wandering Titan",
 	description = "This spell is the embodiment of the Wandering Titan from the cradle series.",
 	sprite 		= "mods/RAT_GUN/files/actions/crumbling_earth.png",
 	type 		= ACTION_TYPE_PROJECTILE,
 	spawn_level                       = "2,3,4,5,6", 
-	spawn_probability                 = "1,1,1,1",
+	spawn_probability                 = "1,1,1,1,1",
 	price = 100,
 	mana = 50,
 	action 		= function()
-		add_projectile("mods/RAT_GUN/files/actions/dreadgod.xml")
+		add_projectile("mods/RAT_GUN/files/actions/dreadgod1.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 } )
@@ -70,7 +70,7 @@ table.insert( actions,
 	sprite 		= "mods/RAT_GUN/files/actions/lightning.png",
 	type 		= ACTION_TYPE_PROJECTILE,
 	spawn_level                       = "2,3,4,5,6", 
-	spawn_probability                 = "1,1,1,1",
+	spawn_probability                 = "1,1,1,1,1",
 	price = 100,
 	mana = 50,
 	action 		= function()
@@ -79,4 +79,20 @@ table.insert( actions,
 		c.fire_rate_wait = c.fire_rate_wait + 1
 		end
 	end
+} )
+table.insert( actions,
+{
+	id          = "PENANCE",
+	name 		= "Penance",
+	description = "This spell is the killing arrow penance from the cradle series",
+	sprite 		= "mods/RAT_GUN/files/actions/lightning.png",
+	type 		= ACTION_TYPE_PROJECTILE,
+	spawn_level                       = "2,3,4,5,6", 
+	spawn_probability                 = "1,1,1,1,1",
+	price = 100,
+	mana = 120,
+	action 		= function()
+		add_projectile("mods/RAT_GUN/files/actions/penance.xml")
+		c.fire_rate_wait = c.fire_rate_wait + 1
+		end,
 } )
